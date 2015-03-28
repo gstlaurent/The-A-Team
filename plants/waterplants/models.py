@@ -4,7 +4,7 @@ from django.db import models
 
 class Plant(models.Model):
     type = models.CharField(max_length=100)
-    interval = models.TimeField()
+    interval = models.IntegerField()
 
 class UserPlants(models.Model):
     name = models.CharField(max_length=100)
