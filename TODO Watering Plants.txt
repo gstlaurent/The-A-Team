@@ -1,0 +1,16 @@
+TODO: 
+
+1. Set up our endpoints
+a) home
+b) watering
+c) adding
+
+2. A function that returns a list of plantnames and times in the right format for sending
+
+3. A function to add a plant to the user's collection of plant
+
+4. Function to update a user's plant when it is watered
+
+5. A Client (web stuff)
+
+6. Fill up 'database' of plant info
