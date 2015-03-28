@@ -10,7 +10,7 @@ def index(request):
 =======
     myplants = [('Bob', 'Rose', 10), ('Jericho', 'Cactus', 99)] # (Name, Type, Number of seconds til Needs to be Watered)
     planttypes = ['Rose', 'Cactus', 'Venus Fly Trap'] # Plant type names
-    context = RequestContext(request, { 'myplants': ..., 'planttypes': ...} )
+    context = RequestContext(request, { 'myplants': myplants, 'planttypes': planttypes} )
     return HttpResponse(template.render(context))
 
 def waterplant(request):
