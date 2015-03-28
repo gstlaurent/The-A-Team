@@ -9,8 +9,10 @@ def index(request):
     context = RequestContext(request, { 'myplants': myplants, 'planttypes': planttypes} )
     return HttpResponse(template.render(context))
 
-def waterplant(request):
+# def waterplant(request):
 
 
-def addplant(request):
 
+# def addplant(request):
+# plantName 
+# plantType
