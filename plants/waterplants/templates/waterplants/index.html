@@ -1,6 +1,15 @@
-Hello Hello!
-<ul>
-  {% for i in something %}
-    <li>{{ i }}</li>
-  {% endfor %}
-</ul>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Time Left</th>
+  </tr>
+  <tr>
+    {% for plant in myplants %}
+      <td>{{ plant.name }}</td>
+      <td>{{ plant.plantType }}</td>
+      <td>{{ plant.nextWaterTime }}</td>
+    {% endfor %}
+  </tr>
+</table>
+
