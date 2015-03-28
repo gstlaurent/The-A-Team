@@ -8,5 +8,5 @@ class Plant(models.Model):
 
 class UserPlants(models.Model):
     name = models.CharField(max_length=100)
-    nextWaterTime = models.IntegerField()
+    nextWaterTime = models.TimeField()
     plantType = models.ForeignKey(Plant)
