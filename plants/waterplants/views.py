@@ -16,8 +16,6 @@ def index(request):
 
 # def waterplant(request):
 
-
-
 # def addplant(request):
 # plantName 
 # plantType
