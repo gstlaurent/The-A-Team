@@ -11,8 +11,11 @@ def index(request):
     context = RequestContext(request, { 'myplants': myplants, 'planttypes': planttypes} )
     return HttpResponse(template.render(context))
 
-# def waterplant(request):
-    
+
+# This is just a stub:
+def waterplant(request, userplant_id):
+    return HttpResponse("You watered userplant %s." % UserPlants.get(userplant_id).name)
+
 
 # def addplant(request):
 # plantName 

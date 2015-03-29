@@ -1,15 +1,30 @@
-<table>
+<table style="text-align: left">
+  <col width="130">
+  <col width="130">
+  <col width="130">
   <tr>
     <th>Name</th>
     <th>Type</th>
-    <th>Time Left</th>
+    <th>Next Watering Time</th>
   </tr>
   <tr>
     {% for plant in myplants %}
       <td>{{ plant.name }}</td>
-      <td>{{ plant.plantType }}</td>
+      <td>{{ plant.plantType.type }}</td>
       <td>{{ plant.nextWaterTime }}</td>
+      <td>
+        <form action="{% url 'waterplant' plant.id %}" method="post">
+          <input type="submit" value="I'm Watering it Now!"/>
+        <form>
+      </td>
     {% endfor %}
   </tr>
 </table>
 
+<!-- <form>
+    {% for plant in planttypes %}
+        <option value="name">{{ plant.type }}</option>
+    {% endfor %}
+</form>
+
+ -->
